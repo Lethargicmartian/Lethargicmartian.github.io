@@ -1,0 +1,106 @@
+/*login page*/
+
+body {
+  background-image: url("image11.jpg"); /* Set the URL of your image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Scale the image to cover the entire body */
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button-box input[type="submit"],
+.button-box input[type="reset"],
+.button-box a {
+  background-color: #87CEFA;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  animation: slideUp 0.8s ease-in-out forwards 1s;
+}
+
+.button-box input[type="submit"]:hover,
+.button-box input[type="reset"]:hover,
+.button-box a:hover {
+  background-color: #007c71;
+}
+
+.forgot-password,
+.cancel {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover,
+.cancel:hover {
+  color: #00c7b7;
+}
+
+  .return-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #87CEFA;
+    color: #1c1c1c;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .return-btn:hover {
+    transform: scale(1.1);
+  }
+  

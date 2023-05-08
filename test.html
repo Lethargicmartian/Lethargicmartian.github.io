@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Screen Video with Sound and Play/Pause Button</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		#playPauseBtn {
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+			background-color: rgba(255, 255, 255, 0.6);
+			padding: 10px 20px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		#playPauseBtn::before {
+			content: "shh easter egg"; /* Unicode character for play icon */
+			font-size: 24px;
+		}
+		#playPauseBtn.playing::before {
+			content: "AHAHAHAHA"; /* Unicode character for pause icon */
+		}
+	</style>
+</head>
+<body>
+	<video id="myVideo" autoplay loop>
+		<source src="hehe.mp4" type="video/mp4">
+	</video>
+
+	<div id="playPauseBtn"></div>
+
+	<script>
+		// Get the video element and play/pause button
+		var video = document.getElementById("myVideo");
+		var playPauseBtn = document.getElementById("playPauseBtn");
+
+		// Disable default controls
+		video.controls = false;
+
+		// Add click event listener to play/pause button
+		playPauseBtn.addEventListener('click', function() {
+			if (video.paused) {
+				video.play();
+				playPauseBtn.classList.add("playing");
+			} else {
+				video.pause();
+				playPauseBtn.classList.remove("playing");
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="container circle-in-top-right" >
+            <nav>
+                <div class="logo">
+                    <a href="" frameborder="0" allowfullscreen></iframe><img src="image3.png" alt="My Website"></a>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#timetable">Timetable</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li class="right"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+   
+        <section id="home" class="section">
+         <div class="wrapper"></div>
+            <div class="box">
+                <div class="container">
+                  <h1 style="font-size: 40px;">𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕄𝕐 𝕎𝔼𝔹𝕊𝕀𝕋𝔼</h1>
+                  <button id="music-btn" onclick="toggleMusic()">Pause Music</button>
+      
+                  <audio id="bg-music" autoplay loop>
+                    <source src="audio1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                  
+               
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="about" class="section">
+            <div class="box">
+              <a href="" style="display: block; text-align :right;">
+                <img src="Doge.jpg" alt="My Website" style="border-radius: 300px; width: 100%; max-width: 400px;">
+              </a>
+                <div class="container">
+                    <h2>𝔸𝔹𝕆𝕌𝕋 𝕄𝔼</h2>
+                    <p>My name is Aqif Shahmi bin Shahrom and im currently 20 years old, i live near cyberjaya.</p>
+                    <p>Im currently studying at UITM Shah Alam taking netcentric computing in bachelors degree</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="section">
+          <div class="box">
+            <div class="container">
+              <h2>𝔾𝔸𝕃𝕃𝔼ℝ𝕐</h2>
+              <a href="" style="display: block; text-align: right;">
+                <img src="Doge.jpg" alt="My Website" style="border-radius: 300px; width: 100%; max-width: 400px;">
+              </a>
+              <a href="" style="display: block; text-align: right;">
+                <img src="image1.png" alt="My Website" style="border-radius: 300px; width: 100%; max-width: 400px;">
+              </a>
+              <a href="gallery.html" class="button">See More</a>
+            </div>
+          </div>
+        </section>
+        <section id="timetable" class="section">
+            <div class="wrapper">
+              <div class="box">
+                <div class="container">
+                  <h1>𝕋𝕀𝕄𝔼𝕋𝔸𝔹𝕃𝔼</h1>
+                  <table> 
+                    <tr>
+                      <th style="border-top-left-radius: 30px;"> TIME/DAY </th>
+                      <th> MONDAY </th>
+                      <th> TUESDAY </th>
+                      <th> WEDNESDAY </th>
+                      <th> THURSDAY </th>
+                      <th style="border-top-right-radius: 30px;"> FRIDAY </th>
+                    </tr>
+                    <tr>
+                      <th> 8.00-10.00 </th>
+                      <td></td>
+                      
+                        <td>
+                        <div class="popup" onclick="myFunction('popup1')">CSC574(MK17) 
+                        <span class="popuptext" id="popup1"> Dynamic web application development (madam Nur Aina Khadijah)</span>
+                        </div>
+                        </td>
+                     
+                      <td>
+                        <div class="popup" onclick="myFunction('popup2')">CSC574(ONLINE) 
+                          <span class="popuptext" id="popup2">Dynamic web application development (madam Nur Aina Khadijah)</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup3')">MAT421(ONLINE) 
+                          <span class="popuptext" id="popup3">Calculus 1 (madam Nurul Syaza)</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup4')">CSC404(MK15) 
+                          <span class="popuptext" id="popup4">Programming 2(madam Syakirah)</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th> 10.00-12.00 </th>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup5')">ICT450(MK18) 
+                          <span class="popuptext" id="popup5">Database design and development (madam Rozianawaty)</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup6')">CSC520(ONLINE) 
+                          <span class="popuptext" id="popup6">Principle of operating system (madam Norhaslinda)</span>
+                        </div>
+                      </td> 
+                      <td>
+                        <div class="popup" onclick="myFunction('popup7')">CSC404(ONLINE) 
+                          <span class="popuptext" id="popup7">Programming 2 (madam Syakirah)</span>
+                        </div>
+                      </td>                      
+                      <td></td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup8')">STA416(BK21) 
+                          <span class="popuptext" id="popup8">Applied probability and statistic (madam Noor Fadhilah)</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th> 12.00-2.00 </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th> 2.00-4.00 </th>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup9')">CSC520(BK21) 
+                          <span class="popuptext" id="popup9">>Principle of operating system (madam Norhaslinda)!</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup10')">STA416(BK24) 
+                          <span class="popuptext" id="popup10">Applied probability and statistic (madam Noor Fadhilah)</span>
+                        </div>
+                      </td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                    <th style="border-bottom-left-radius: 30px;"> 4.00-6.00 </th>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup11')">MAT421(MK6) 
+                            <span class="popuptext" id="popup11">Calculus 1 (madam Nurul Syaza)</span>
+                            </div>
+                      </td>
+                      <td>
+                        <div class="popup" onclick="myFunction('popup12')">ICT450(ONLINE) 
+                          <span class="popuptext" id="popup12">Database design and development (madam Noor Aziah)</span>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td style="border-bottom-right-radius: 30px;"> </td>
+                    </tr>
+          
+        
+                
+                    <div class="website"></div>
+                   
+                      
+                      <body style="text-align:center">
+                      
+                      
+                      </body>
+                      </html>
+                   </table>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="resume" class="section">
+          <div class="box">
+              <div class="container" style="font-size: 14px;">
+                <h2>ℝ𝔼𝕊𝕌𝕄𝔼</h2>
+                <div class="resume-btn">
+                  <a href="resume.html">View My Resume</a>
+                  </div>
+          </div>
+      </section>
+      
+
+                </div>
+            </div>
+        </section>
+        <section id="download" class="section">
+            <div class="box">
+                <div class="container">
+                    <h2>𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻</h2>
+                    <p>Download my latest scedule and timetable.</p>
+                    <a href="Timetable.pdf" download><button class="download-button">Download Timetable</button></a>
+                    <a href="Resume.pdf" download><button class="download-button">Download Resume</button></a>
+                  
+                </div>
+            </div>
+    </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="https://www.instagram.com/?hl=en" ></iframe><img src="insta2.png" alt="My Website"  width="300" height="170"></a>
+            <a href="https://www.facebook.com/login/" ></iframe><img src="facebook-new.png" alt="My Website" width="230" height="190"></a>
+            <a href="https://twitter.com/"></iframe><img src="twitter.png" alt="My Website" width="200" height="170" ></a>
+            <a href="test.html"></iframe><img src="tiktok.png" alt="My Website" width="180" height="140" ></a>
+        </div>
+        <br> 
+        <div class="container">
+            <p>&copy; 2023 My Website</p>
+            <p>The information provided on this website is for general informational purposes only. The content of this website, including but not limited to text, images, and photographs, is for personal, non-commercial use only. While we strive to keep the information up-to-date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+
+              In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+              
+              Through this website you may be able to link to other websites which are not under our control. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+              
+              Every effort is made to keep the website up and running smoothly. However, we take no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+        </div>
+
+    </footer>
+    <script>
+
+// When the user clicks on the popup button, show the popup message
+function myFunction(popupId) {
+  var popup = document.getElementById(popupId);
+  popup.classList.toggle("show");
+}
+
+function toggleMusic() {
+            var music = document.getElementById("bg-music");
+            var btn = document.getElementById("music-btn");
+            if (music.paused) {
+              music.play();
+              btn.innerHTML = "Pause Music";
+            } else {
+              music.pause();
+              btn.innerHTML = "Play Music";
+            }
+          }
+        </script>
+        
+
+</body>
+</html>

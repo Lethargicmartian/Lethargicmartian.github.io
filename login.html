@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-box">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+        </div>
+        <div class="input-box">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="button-box">
+          <input type="submit" value="Submit" onclick="playAudio()">
+          <audio id="audio">
+            <source src="audio7.mp3" type="audio/mpeg"></source>
+          </audio>
+          <input type="reset" value="Clear">
+          <a href="video6.mp4" class="forgot-password">Forgot Password?</a>
+          <a href="home.html" class="cancel-button">Cancel</a>
+          <a href="sign.html" class="signupbtn">Sign Up</a>
+        </div>
+        <div class="return-btn">
+          <a href="home.html">Return to Home</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
